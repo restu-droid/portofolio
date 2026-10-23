@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restu Rosenda — Pelajar TKJ &amp; Calon Profesional IT</title>
+  <meta name="description" content="Portofolio pribadi Restu Rosenda, pelajar kelas XII Teknik Komputer Jaringan di SMK Alhadiid 1 Cileungsi. Berisi profil, keahlian, perjalanan belajar, dan rencana karier di dunia teknologi." />
+  <meta name="author" content="Restu Rosenda" />
+  <meta name="theme-color" content="#080b11" />
+
+  <!-- Terapkan tema tersimpan sebelum halaman dirender agar tidak berkedip -->
+  <script>
+    try {
+      var savedTheme = localStorage.getItem("rr-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    } catch (error) {}
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Restu Rosenda — Portofolio" />
+  <meta property="og:description" content="Pelajar TKJ di SMK Alhadiid 1 Cileungsi yang percaya bahwa teknologi adalah masa depan." />
+  <meta property="og:locale" content="id_ID" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b0f16'/><text x='32' y='44' font-family='Georgia,serif' font-size='30' font-style='italic' text-anchor='middle' fill='%23d9b878'>RR</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-mark">RR</span>
+      <span class="loader-line"></span>
+      <span class="loader-text">Menyiapkan portofolio</span>
+    </div>
+  </div>
+
+  <!-- ===== Efek kursor ===== -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Restu Rosenda — kembali ke beranda">
+        <span class="brand-mark">RR</span>
+        <span class="brand-text">Restu Rosenda</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="#home" class="nav-link is-active">Beranda</a>
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#journey" class="nav-link">Perjalanan</a>
+        <a href="#goals" class="nav-link">Tujuan</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ganti ke tema terang" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Mari Ngobrol</a>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu navigasi" aria-controls="nav" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <div class="hero-grid-lines"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            Pelajar Teknik Komputer Jaringan
+          </p>
+
+          <h1 class="hero-title reveal" data-delay="80">
+            Restu <em class="grad-text">Rosenda</em>
+          </h1>
+
+          <p class="hero-role reveal" data-delay="140">
+            <span class="role-prefix">Seorang</span>
+            <span class="type-text" id="typewriter">Pelajar TKJ</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-lead reveal" data-delay="200">
+            Pelajar kelas XII di <strong>SMK Alhadiid 1 Cileungsi</strong> yang percaya bahwa
+            teknologi adalah masa depan — dan saya ingin menjadi bagian di dalamnya,
+            bukan sekadar penonton.
+          </p>
+
+          <div class="hero-actions reveal" data-delay="260">
+            <a href="#about" class="btn btn-primary">
+              Kenali Saya
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+          </div>
+
+          <p class="hero-note reveal" data-delay="320">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Terbuka untuk belajar, kolaborasi, dan peluang baru.
+          </p>
+
+          <dl class="hero-stats reveal" data-delay="380">
+            <div class="stat">
+              <dt>Usia</dt>
+              <dd><span>18</span> Tahun</dd>
+            </div>
+            <div class="stat">
+              <dt>Kelas</dt>
+              <dd><span>XII</span> Sekarang</dd>
+            </div>
+            <div class="stat">
+              <dt>Jurusan</dt>
+              <dd><span>TKJ</span> Jaringan</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="220">
+          <div class="portrait-wrap" id="portraitWrap">
+            <span class="orbit orbit-1" aria-hidden="true"></span>
+            <span class="orbit orbit-2" aria-hidden="true"></span>
+
+            <div class="portrait-card">
+              <div class="portrait-frame portrait-frame-photo">
+                <img src="assets/img/restu-profil-perlengkapan.jpg" alt="Restu Rosenda mengenakan perlengkapan saat praktik jaringan" class="portrait-photo" />
+              </div>
+
+              <div class="portrait-chip chip-top">
+                <span class="chip-dot" aria-hidden="true"></span>
+                <div>
+                  <strong>TKJ</strong>
+                  <span>SMK Alhadiid 1</span>
+                </div>
+              </div>
+
+              <div class="portrait-chip chip-bottom">
+                <span class="chip-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"></path>
+                    <path d="M3 12l9 4.5L21 12M3 16.5 12 21l9-4.5"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Praktik Jaringan</strong>
+                  <span>FO &amp; Perangkat Jaringan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Gulir ke bagian tentang saya">
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+        <span>Gulir</span>
+      </a>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Networking</span><span class="sep">✦</span>
+        <span>Hardware</span><span class="sep">✦</span>
+        <span>Linux</span><span class="sep">✦</span>
+        <span>MikroTik</span><span class="sep">✦</span>
+        <span>Web Dasar</span><span class="sep">✦</span>
+        <span>Problem Solving</span><span class="sep">✦</span>
+        <span>Teknologi</span><span class="sep">✦</span>
+        <span>Networking</span><span class="sep">✦</span>
+        <span>Hardware</span><span class="sep">✦</span>
+        <span>Linux</span><span class="sep">✦</span>
+        <span>MikroTik</span><span class="sep">✦</span>
+        <span>Web Dasar</span><span class="sep">✦</span>
+        <span>Problem Solving</span><span class="sep">✦</span>
+        <span>Teknologi</span><span class="sep">✦</span>
+      </div>
+    </div>
+
+    <!-- ===== Tentang ===== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow"><span>01</span> Tentang Saya</p>
+          <h2 class="section-title">Seorang pelajar yang percaya pada <em>masa depan teknologi</em>.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="about-lead reveal">
+              Nama lengkap saya <strong>Restu Rosenda</strong>, biasa dipanggil Restu.
+              Saat ini saya berusia <strong>18 tahun</strong> dan menempuh kelas <strong>XII</strong>
+              di SMK Alhadiid 1 Cileungsi dengan jurusan
+              <strong>Teknik Komputer Jaringan (TKJ)</strong>.
+            </p>
+
+            <p class="reveal" data-delay="60">
+              Saya memilih jurusan ini karena meyakini bahwa ke depan teknologi akan semakin
+              berkembang, perusahaan-perusahaan teknologi akan semakin bermunculan, dan lapangan
+              pekerjaan pun terbuka lebar untuk bidang-bidang seperti ini.
+            </p>
+
+            <p class="reveal" data-delay="120">
+              Namun bagi saya, memahami teknologi bukan hanya soal pekerjaan semata. Saya ingin
+              benar-benar paham cara kerja teknologi dan tidak termasuk ke dalam persentase orang
+              yang gaptek. Saya juga berniat melanjutkan kuliah di jurusan yang sejalur — seperti
+              <strong>IT</strong> atau <strong>Sistem Informasi</strong> — agar pemahaman saya
+              lebih dalam, terarah, dan punya bekal yang jelas.
+            </p>
+
+            <div class="about-signature reveal" data-delay="180">
+              <span class="signature-script">Restu Rosenda</span>
+              <span class="signature-meta">Pelajar TKJ · Kelas XII</span>
+            </div>
+
+            <div class="quote-card reveal" data-delay="220">
+              <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M9.5 5C6.5 6.4 4.7 9 4.7 12.2c0 3 1.8 5 4.2 5 2.1 0 3.7-1.5 3.7-3.6 0-2-1.4-3.4-3.3-3.4-.4 0-.7 0-1 .1.4-1.4 1.5-2.6 3-3.4L9.5 5Zm9 0c-3 1.4-4.8 4-4.8 7.2 0 3 1.8 5 4.2 5 2.1 0 3.7-1.5 3.7-3.6 0-2-1.4-3.4-3.3-3.4-.4 0-.7 0-1 .1.4-1.4 1.5-2.6 3-3.4L18.5 5Z" />
+              </svg>
+              <p>Teknologi tidak akan pernah berhenti berkembang. Yang bisa saya lakukan adalah terus belajar agar tidak tertinggal.</p>
+              <cite>— Restu Rosenda</cite>
+            </div>
+          </div>
+
+          <aside class="about-side">
+            <div class="fact-card reveal" data-delay="100">
+              <h3 class="fact-title">Data Singkat</h3>
+              <dl class="fact-list">
+                <div class="fact">
+                  <dt>Nama Lengkap</dt>
+                  <dd>Restu Rosenda</dd>
+                </div>
+                <div class="fact">
+                  <dt>Usia</dt>
+                  <dd>18 Tahun</dd>
+                </div>
+                <div class="fact">
+                  <dt>Sekolah</dt>
+                  <dd>SMK Alhadiid 1 Cileungsi</dd>
+                </div>
+                <div class="fact">
+                  <dt>Jurusan</dt>
+                  <dd>Teknik Komputer Jaringan</dd>
+                </div>
+                <div class="fact">
+                  <dt>Kelas</dt>
+                  <dd>XII (Dua Belas)</dd>
+                </div>
+                <div class="fact">
+                  <dt>Status</dt>
+                  <dd>Pelajar Aktif</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="why-card reveal" data-delay="160">
+              <h3 class="fact-title">Kenapa Memilih TKJ?</h3>
+
+              <div class="why-item">
+                <span class="why-num">01</span>
+                <div>
+                  <h4>Melihat Jauh ke Depan</h4>
+                  <p>Teknologi terus berkembang, perusahaan teknologi terus bermunculan, dan lapangan kerja di bidang ini terbuka lebar.</p>
+                </div>
+              </div>
+
+              <div class="why-item">
+                <span class="why-num">02</span>
+                <div>
+                  <h4>Melek Teknologi</h4>
+                  <p>Bukan hanya untuk bekerja, tetapi agar saya benar-benar paham teknologi dan tidak sekadar menjadi pengguna.</p>
+                </div>
+              </div>
+
+              <div class="why-item">
+                <span class="why-num">03</span>
+                <div>
+                  <h4>Bekal Menuju Kuliah</h4>
+                  <p>Menjadi fondasi awal sebelum melanjutkan studi di bidang IT, Sistem Informasi, atau jurusan sejalur lainnya.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Keahlian ===== -->
+    <section class="section section-alt skills" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow"><span>02</span> Keahlian</p>
+          <h2 class="section-title">Kompetensi yang sedang <em>saya bangun</em>.</h2>
+          <p class="section-desc">
+            Bekal dari pembelajaran di sekolah, praktik, dan rasa ingin tahu yang tidak berhenti.
+            Persentase di bawah adalah gambaran jujur mengenai tahap belajar saya saat ini.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skills-intro reveal">
+            <div class="skills-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"></path>
+                <path d="M3 12l9 4.5L21 12M3 16.5 12 21l9-4.5"></path>
+              </svg>
+              <span>Learning by doing</span>
+            </div>
+            <h3>Dari kelas, laboratorium, praktik jaringan &amp; PKL.</h3>
+            <p>
+              Terbiasa belajar dengan praktik langsung: mulai dari perakitan PC, konfigurasi
+              modem/router untuk akses internet, pengukuran redaman FTTH, konfigurasi server
+              berbasis Linux (Debian/Ubuntu), hingga pekerjaan fiber optic seperti splicing dan
+              pendokumentasian hasil kerja.
+            </p>
+
+            <div class="chip-group" aria-label="Alat dan teknologi yang dipelajari">
+              <span class="chip">Perakitan &amp; Troubleshooting PC</span>
+              <span class="chip">MikroTik</span>
+              <span class="chip">FTTH &amp; Optical Power Meter</span>
+              <span class="chip">Splicing Fiber Optic</span>
+              <span class="chip">Linux Server (Debian/Ubuntu)</span>
+              <span class="chip">Cisco Packet Tracer</span>
+              <span class="chip">Konfigurasi Modem/Router ISP</span>
+              <span class="chip">Instalasi &amp; Jaringan Dasar</span>
+              <span class="chip">Microsoft Office</span>
+              <span class="chip">HTML, CSS &amp; JavaScript</span>
+            </div>
+
+            <div class="skills-note">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              Sedang memperdalam: Linux Server, routing, dan troubleshooting jaringan.
+            </div>
+          </div>
+
+          <div class="skills-bars reveal" data-delay="120">
+            <div class="skill">
+              <div class="skill-head">
+                <span>Perakitan &amp; Troubleshooting PC</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><span data-level="88"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>Konfigurasi Jaringan &amp; Akses Internet (Modem/Router)</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-bar"><span data-level="86"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>FTTH, Pengukuran Redaman &amp; Splicing Fiber Optic</span>
+                <span class="skill-pct">84%</span>
+              </div>
+              <div class="skill-bar"><span data-level="84"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>Linux Server (Debian/Ubuntu) &amp; Konfigurasi Layanan</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><span data-level="78"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>Routing/Switching &amp; MikroTik</span>
+                <span class="skill-pct">76%</span>
+              </div>
+              <div class="skill-bar"><span data-level="76"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>Dasar Web (HTML, CSS, JavaScript)</span>
+                <span class="skill-pct">68%</span>
+              </div>
+              <div class="skill-bar"><span data-level="68"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Perjalanan ===== -->
+    <section class="section journey" id="journey">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow"><span>03</span> Perjalanan</p>
+          <h2 class="section-title">Belajar di sekolah, praktik, dan <em>pengalaman PKL</em>.</h2>
+          <p class="section-desc">
+            Dokumentasi beberapa kegiatan yang saya lakukan: perakitan PC, setting konfigurasi modem/wifi
+            untuk mendapatkan akses internet dari ISP (Pandawa Global Telematika), pengecekan redaman
+            pada jaringan FTTH, konfigurasi server Linux (Debian/Ubuntu), serta pekerjaan fiber optic
+            saat PKL seperti splicing dan dokumentasi lapangan.
+          </p>
+        </div>
+
+        <div class="journey-gallery reveal" data-delay="80">
+          <article class="journey-card">
+            <figure class="journey-media">
+              <img src="assets/img/rakit-pc.jpg" alt="Praktik merakit dan mengecek komponen PC" loading="lazy" />
+            </figure>
+            <div class="journey-body">
+              <span class="journey-tag">Praktik</span>
+              <h3>Perakitan &amp; Troubleshooting PC</h3>
+              <p>Merakit dan membongkar PC: memasang komponen seperti motherboard, RAM, storage, dan power supply, merapikan kabel, lalu memastikan perangkat menyala dan berfungsi normal.</p>
+            </div>
+          </article>
+
+          <article class="journey-card">
+            <figure class="journey-media">
+              <img src="assets/img/setting-modem-wifi-isp-pandawa.jpg" alt="Setting konfigurasi modem dan Wi-Fi untuk layanan ISP Pandawa" loading="lazy" />
+            </figure>
+            <div class="journey-body">
+              <span class="journey-tag">Jaringan Akses</span>
+              <h3>Konfigurasi Modem &amp; Wi-Fi ISP Pandawa</h3>
+              <p>Setting mode perangkat, pengaturan SSID &amp; password Wi-Fi, serta konfigurasi lain agar layanan internet dari ISP Pandawa bisa digunakan pelanggan sesuai paket yang dibeli.</p>
+            </div>
+          </article>
+
+          <article class="journey-card">
+            <figure class="journey-media">
+              <img src="assets/img/konfigurasi-router.jpg" alt="Konfigurasi router untuk distribusi koneksi internet" loading="lazy" />
+            </figure>
+            <div class="journey-body">
+              <span class="journey-tag">Jaringan Akses</span>
+              <h3>Konfigurasi Router</h3>
+              <p>Melanjutkan pengaturan pada perangkat router — mode kerja, jaringan, dan Wi-Fi — lalu mengecek koneksi agar internet terdistribusi dengan baik ke perangkat pelanggan.</p>
+            </div>
+          </article>
+
+          <article class="journey-card">
+            <figure class="journey-media">
+              <img src="assets/img/cek-redaman-ftth.jpg" alt="Pengecekan redaman jaringan FTTH menggunakan Optical Power Meter" loading="lazy" />
+            </figure>
+            <div class="journey-body">
+              <span class="journey-tag">FTTH</span>
+              <h3>Pengecekan Redaman dengan OPM</h3>
+              <p>Mengukur nilai redaman (loss) daya optik pada jaringan FTTH memakai Optical Power Meter, lalu membaca hasilnya untuk memastikan kualitas sinyal masih sesuai standar.</p>
+            </div>
+          </article>
+
+          <article class="journey-card">
+            <figure class="journey-media">
+              <img src="assets/img/konfigurasi-debian-server.jpg" alt="Konfigurasi server Linux di lingkungan virtual" loading="lazy" />
+            </figure>
+            <div class="journey-body">
+              <span class="journey-tag">Server</span>
+              <h3>Konfigurasi Server Linux (Debian/Ubuntu)</h3>
+              <p>Menjalankan dan mengonfigurasi server Linux di virtual machine: login &amp; pengelolaan pengguna, pengecekan jaringan, serta penyesuaian layanan sesuai kebutuhan praktik.</p>
+            </div>
+          </article>
+
+          <article class="journey-card">
+            <figure class="journey-media">
+              <img src="assets/img/kegiatan-pkl.jpg" alt="Dokumentasi kegiatan PKL di lapangan" loading="lazy" />
+            </figure>
+            <div class="journey-body">
+              <span class="journey-tag">PKL</span>
+              <h3>Pengalaman PKL di Lapangan</h3>
+              <p>Dokumentasi kegiatan PKL: mobilitas antar lokasi, persiapan alat, dan mengikuti alur pekerjaan instalasi serta perawatan jaringan bersama tim.</p>
+            </div>
+          </article>
+
+          <article class="journey-card">
+            <figure class="journey-media">
+              <img src="assets/img/pkl-splicing-fiber.jpg" alt="Kegiatan PKL bersama tim saat pengujian splicing kabel fiber optic" loading="lazy" />
+            </figure>
+            <div class="journey-body">
+              <span class="journey-tag">PKL</span>
+              <h3>Tes Splicing &amp; Penanganan Kabel FO</h3>
+              <p>Dokumentasi kegiatan PKL di Pandawa Global Telematika: bekerja bersama tim, melakukan penyambungan (splicing) serat optik, lalu mengecek hasil sambungan agar jaringan tersambung dengan baik.</p>
+            </div>
+          </article>
+
+          <a class="journey-card journey-cta" href="#contact">
+            <span class="journey-cta-glow" aria-hidden="true"></span>
+            <span class="journey-tag">Lainnya</span>
+            <h3>Ingin tahu lebih detail?</h3>
+            <p>Silakan hubungi saya untuk diskusi, kolaborasi, atau pertanyaan seputar jaringan dan perangkat.</p>
+            <span class="journey-cta-link">
+              Hubungi saya
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Tujuan ===== -->
+    <section class="section section-alt goals" id="goals">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow"><span>04</span> Tujuan</p>
+          <h2 class="section-title">Ke mana saya ingin <em>melangkah</em>.</h2>
+        </div>
+
+        <div class="goals-grid">
+          <article class="goal-card reveal">
+            <span class="goal-index" aria-hidden="true">01</span>
+            <span class="goal-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9.5 12 4l9 5.5M5 11v8h14v-8"></path>
+                <path d="M9 19v-5h6v5"></path>
+              </svg>
+            </span>
+            <h3>Pendidikan</h3>
+            <p class="goal-sub">Kuliah IT / Sistem Informasi</p>
+            <p>
+              Melanjutkan studi ke jenjang perkuliahan di bidang teknologi agar pemahaman saya
+              lebih mendalam, terstruktur, dan siap menghadapi dunia profesional.
+            </p>
+          </article>
+
+          <article class="goal-card reveal" data-delay="100">
+            <span class="goal-index" aria-hidden="true">02</span>
+            <span class="goal-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="9" r="5"></circle>
+                <path d="m8.5 13-1.7 7L12 17.5 17.2 20l-1.7-7"></path>
+              </svg>
+            </span>
+            <h3>Kompetensi</h3>
+            <p class="goal-sub">Sertifikasi &amp; Praktik Nyata</p>
+            <p>
+              Mengasah kemampuan jaringan dan perangkat keras, mengikuti pelatihan atau
+              sertifikasi, serta memperbanyak praktik langsung.
+            </p>
+          </article>
+
+          <article class="goal-card reveal" data-delay="200">
+            <span class="goal-index" aria-hidden="true">03</span>
+            <span class="goal-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path>
+              </svg>
+            </span>
+            <h3>Karier</h3>
+            <p class="goal-sub">Profesional di Dunia Teknologi</p>
+            <p>
+              Berkontribusi di perusahaan teknologi sebagai profesional IT — khususnya di bidang
+              jaringan — dengan sikap kerja yang bertanggung jawab.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Kontak ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-info">
+            <p class="section-eyebrow"><span>05</span> Kontak</p>
+            <h2 class="section-title">Punya pertanyaan atau ingin <em>berdiskusi</em>?</h2>
+            <p class="contact-desc">
+              Saya terbuka untuk berdiskusi soal teknologi, jaringan, peluang belajar, atau
+              sekadar bertukar pikiran. Silakan kirim pesan — saya akan berusaha membalas
+              secepatnya.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"></path>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact-label">WhatsApp</span>
+                  <a href="https://wa.me/6285717149827" class="contact-value" target="_blank" rel="noopener">0857-1714-9827</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="m3 7 9 6 9-6"></path>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:ceotutu28@gmail.com" class="contact-value">ceotutu28@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4.2"></circle>
+                    <circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"></circle>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact-label">Instagram</span>
+                  <a href="https://instagram.com/restuursndaa" class="contact-value" target="_blank" rel="noopener">@restuursndaa</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="2.6"></circle>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact-label">Lokasi Sekolah</span>
+                  <span class="contact-value">SMK Alhadiid 1 Cileungsi — Bogor, Jawa Barat</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-5 9 5-9 5-9-5Z"></path>
+                    <path d="M7 11.5V17c2.8 2 7.2 2 10 0v-5.5"></path>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact-label">Pendidikan</span>
+                  <span class="contact-value">SMK Alhadiid 1 Cileungsi — TKJ</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap">
+            <!-- Email tujuan form: ubah di data-email dan pada tautan email di atas bila berubah. -->
+            <form class="contact-form" id="contactForm" data-email="ceotutu28@gmail.com" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="name">Nama</label>
+                  <input type="text" id="name" name="name" placeholder="Nama kamu" required autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="nama@email.com" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subjek</label>
+                <input type="text" id="subject" name="subject" placeholder="Tentang apa pesan ini?" required />
+              </div>
+
+              <div class="field">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Kirim Pesan
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m22 2-7 20-4-9-9-4 20-7Z"></path>
+                  <path d="M22 2 11 13"></path>
+                </svg>
+              </button>
+
+              <p class="form-hint">Pesan akan dikirim melalui aplikasi email yang terpasang di perangkatmu.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand" aria-label="Restu Rosenda — kembali ke beranda">
+          <span class="brand-mark">RR</span>
+          <span class="brand-text">Restu Rosenda</span>
+        </a>
+        <p>Pelajar TKJ yang percaya bahwa belajar hari ini adalah investasi untuk masa depan.</p>
+
+        <div class="footer-social">
+          <a href="https://wa.me/6285717149827" target="_blank" rel="noopener" aria-label="WhatsApp Restu Rosenda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"></path>
+            </svg>
+            0857-1714-9827
+          </a>
+          <a href="https://instagram.com/restuursndaa" target="_blank" rel="noopener" aria-label="Instagram Restu Rosenda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"></circle>
+            </svg>
+            @restuursndaa
+          </a>
+          <a href="mailto:ceotutu28@gmail.com" aria-label="Email Restu Rosenda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <path d="m3 7 9 6 9-6"></path>
+            </svg>
+            ceotutu28@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#journey">Perjalanan</a>
+        <a href="#goals">Tujuan</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Restu Rosenda. Seluruh hak cipta dilindungi.</p>
+      <p class="footer-made">Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Tombol kembali ke atas -->
+  <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <!-- Notifikasi -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-dot" aria-hidden="true"></span>
+    <span id="toastMessage"></span>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
