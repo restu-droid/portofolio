@@ -82,6 +82,24 @@ Website ini statis, jadi bisa langsung diunggah ke:
 - **GitHub Pages** — unggah semua file ke repositori, lalu aktifkan Pages dari branch `main`.
 - **Netlify / Vercel** — drag-and-drop folder proyek, atau hubungkan ke repositori GitHub.
 
+## Jika situs tampil "polos" (tanpa gaya)
+
+Hampir selalu ini masalah cache, bukan file yang hilang. Cek berurutan:
+
+1. Buka `https://domain-kamu/assets/css/style.css` langsung di browser. Kalau muncul kode CSS (diawali `/* ... */` dengan `--accent`), berarti file sudah benar di server.
+2. Muat ulang paksa halaman: **Ctrl + Shift + R** (Windows) atau **Cmd + Shift + R** (Mac).
+3. Coba **jendela Incognito** (Ctrl + Shift + N) — kalau di Incognito tampil normal, berarti cache browser biasa yang bermasalah.
+4. Tunggu 1–2 menit setelah upload (GitHub Pages butuh waktu build), lalu cek tab **Actions** di repo.
+5. Kalau masih polos: buka **F12 → Console** dan **F12 → Network**, cari baris merah atau file `style.css` berstatus 404.
+
+Setiap kali mengubah `style.css` atau `main.js`, naikkan angka versi di `index.html` agar browser tidak memakai file lama:
+
+```html
+<link rel="stylesheet" href="assets/css/style.css?v=2" />
+<script src="assets/js/main.js?v=2"></script>
+```
+
+
 ## Catatan
 
 Form kontak tidak memakai server/back end. Saat dikirim, browser akan membuka aplikasi email pengunjung dengan isi pesan yang sudah terisi. Jika ingin pesan masuk langsung tanpa aplikasi email, form bisa dihubungkan ke layanan seperti Formspree.
