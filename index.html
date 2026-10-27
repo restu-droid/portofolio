@@ -56,15 +56,18 @@
       </a>
 
       <nav class="nav" id="nav" aria-label="Navigasi utama">
-        <a href="#home" class="nav-link is-active">Beranda</a>
-        <a href="#about" class="nav-link">Tentang</a>
-        <a href="#skills" class="nav-link">Keahlian</a>
-        <a href="#journey" class="nav-link">Perjalanan</a>
-        <a href="#goals" class="nav-link">Tujuan</a>
-        <a href="#contact" class="nav-link">Kontak</a>
+        <a href="#home" class="nav-link is-active" data-i18n="nav_home">Beranda</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">Tentang</a>
+        <a href="#skills" class="nav-link" data-i18n="nav_skills">Keahlian</a>
+        <a href="#journey" class="nav-link" data-i18n="nav_journey">Perjalanan</a>
+        <a href="#achievements" class="nav-link" data-i18n="nav_achievements">Prestasi</a>
+        <a href="#goals" class="nav-link" data-i18n="nav_goals">Tujuan</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Kontak</a>
       </nav>
 
       <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Ganti bahasa" title="Switch language">EN</button>
+
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ganti ke tema terang" aria-pressed="false">
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
             <circle cx="12" cy="12" r="4.2"></circle>
@@ -75,7 +78,7 @@
           </svg>
         </button>
 
-        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Mari Ngobrol</a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_chat">Mari Ngobrol</a>
 
         <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu navigasi" aria-controls="nav" aria-expanded="false">
           <span></span>
@@ -98,7 +101,7 @@
         <div class="hero-copy">
           <p class="eyebrow reveal">
             <span class="status-dot" aria-hidden="true"></span>
-            Pelajar Teknik Komputer Jaringan
+            <span data-i18n="hero_eyebrow">Pelajar Teknik Komputer Jaringan</span>
           </p>
 
           <h1 class="hero-title reveal" data-delay="80">
@@ -106,43 +109,59 @@
           </h1>
 
           <p class="hero-role reveal" data-delay="140">
-            <span class="role-prefix">Seorang</span>
+            <span class="role-prefix" data-i18n="hero_role_prefix">Seorang</span>
             <span class="type-text" id="typewriter">Pelajar TKJ</span><span class="caret" aria-hidden="true"></span>
           </p>
 
-          <p class="hero-lead reveal" data-delay="200">
+          <p class="hero-lead reveal" data-delay="200" data-i18n="hero_lead">
             Pelajar kelas XII di <strong>SMK Alhadiid 1 Cileungsi</strong> yang percaya bahwa
             teknologi adalah masa depan — dan saya ingin menjadi bagian di dalamnya,
             bukan sekadar penonton.
           </p>
 
           <div class="hero-actions reveal" data-delay="260">
-            <a href="#about" class="btn btn-primary">
+            <a href="#about" class="btn btn-primary" data-i18n="hero_cta_about">
               Kenali Saya
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6"></path>
               </svg>
             </a>
-            <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+            <button class="btn btn-ghost" id="downloadCvBtn" type="button" data-i18n="hero_cv_download">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v12"></path>
+                <path d="m7 10 5 5 5-5"></path>
+                <path d="M5 21h14"></path>
+              </svg>
+              Unduh CV (PDF)
+            </button>
+            <button class="btn btn-ghost" id="printCvBtn" type="button" data-i18n="hero_cv_print">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 9V2h12v7"></path>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+              </svg>
+              Cetak CV
+            </button>
+            <a href="#contact" class="btn btn-ghost" data-i18n="hero_cta_contact">Hubungi Saya</a>
           </div>
 
           <p class="hero-note reveal" data-delay="320">
             <span class="pulse-dot" aria-hidden="true"></span>
-            Terbuka untuk belajar, kolaborasi, dan peluang baru.
+            <span data-i18n="hero_note">Terbuka untuk belajar, kolaborasi, dan peluang baru.</span>
           </p>
 
           <dl class="hero-stats reveal" data-delay="380">
             <div class="stat">
-              <dt>Usia</dt>
-              <dd><span>18</span> Tahun</dd>
+              <dt data-i18n="hero_stat_age">Usia</dt>
+              <dd><span>18</span> <span data-i18n="hero_stat_age_unit">Tahun</span></dd>
             </div>
             <div class="stat">
-              <dt>Kelas</dt>
-              <dd><span>XII</span> Sekarang</dd>
+              <dt data-i18n="hero_stat_class">Kelas</dt>
+              <dd><span>XII</span> <span data-i18n="hero_stat_class_unit">Sekarang</span></dd>
             </div>
             <div class="stat">
-              <dt>Jurusan</dt>
-              <dd><span>TKJ</span> Jaringan</dd>
+              <dt data-i18n="hero_stat_major">Jurusan</dt>
+              <dd><span>TKJ</span> <span data-i18n="hero_stat_major_unit">Jaringan</span></dd>
             </div>
           </dl>
         </div>
@@ -160,8 +179,8 @@
               <div class="portrait-chip chip-top">
                 <span class="chip-dot" aria-hidden="true"></span>
                 <div>
-                  <strong>TKJ</strong>
-                  <span>SMK Alhadiid 1</span>
+                  <strong data-i18n="hero_chip1_title">TKJ</strong>
+                  <span data-i18n="hero_chip1_sub">SMK Alhadiid 1</span>
                 </div>
               </div>
 
@@ -173,8 +192,8 @@
                   </svg>
                 </span>
                 <div>
-                  <strong>Praktik Jaringan</strong>
-                  <span>FO &amp; Perangkat Jaringan</span>
+                  <strong data-i18n="hero_chip2_title">Praktik Jaringan</strong>
+                  <span data-i18n="hero_chip2_sub">FO &amp; Perangkat Jaringan</span>
                 </div>
               </div>
             </div>
@@ -212,26 +231,26 @@
     <section class="section about" id="about">
       <div class="container">
         <div class="section-head reveal">
-          <p class="section-eyebrow"><span>01</span> Tentang Saya</p>
-          <h2 class="section-title">Seorang pelajar yang percaya pada <em>masa depan teknologi</em>.</h2>
+          <p class="section-eyebrow"><span>01</span> <span data-i18n="about_eyebrow">Tentang Saya</span></p>
+          <h2 class="section-title" data-i18n-html="about_title">Seorang pelajar yang percaya pada <em>masa depan teknologi</em>.</h2>
         </div>
 
         <div class="about-grid">
           <div class="about-copy">
-            <p class="about-lead reveal">
+            <p class="about-lead reveal" data-i18n-html="about_lead">
               Nama lengkap saya <strong>Restu Rosenda</strong>, biasa dipanggil Restu.
               Saat ini saya berusia <strong>18 tahun</strong> dan menempuh kelas <strong>XII</strong>
               di SMK Alhadiid 1 Cileungsi dengan jurusan
               <strong>Teknik Komputer Jaringan (TKJ)</strong>.
             </p>
 
-            <p class="reveal" data-delay="60">
+            <p class="reveal" data-delay="60" data-i18n="about_p1">
               Saya memilih jurusan ini karena meyakini bahwa ke depan teknologi akan semakin
               berkembang, perusahaan-perusahaan teknologi akan semakin bermunculan, dan lapangan
               pekerjaan pun terbuka lebar untuk bidang-bidang seperti ini.
             </p>
 
-            <p class="reveal" data-delay="120">
+            <p class="reveal" data-delay="120" data-i18n-html="about_p2">
               Namun bagi saya, memahami teknologi bukan hanya soal pekerjaan semata. Saya ingin
               benar-benar paham cara kerja teknologi dan tidak termasuk ke dalam persentase orang
               yang gaptek. Saya juga berniat melanjutkan kuliah di jurusan yang sejalur — seperti
@@ -241,73 +260,73 @@
 
             <div class="about-signature reveal" data-delay="180">
               <span class="signature-script">Restu Rosenda</span>
-              <span class="signature-meta">Pelajar TKJ · Kelas XII</span>
+              <span class="signature-meta" data-i18n="about_sig_meta">Pelajar TKJ · Kelas XII</span>
             </div>
 
             <div class="quote-card reveal" data-delay="220">
               <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M9.5 5C6.5 6.4 4.7 9 4.7 12.2c0 3 1.8 5 4.2 5 2.1 0 3.7-1.5 3.7-3.6 0-2-1.4-3.4-3.3-3.4-.4 0-.7 0-1 .1.4-1.4 1.5-2.6 3-3.4L9.5 5Zm9 0c-3 1.4-4.8 4-4.8 7.2 0 3 1.8 5 4.2 5 2.1 0 3.7-1.5 3.7-3.6 0-2-1.4-3.4-3.3-3.4-.4 0-.7 0-1 .1.4-1.4 1.5-2.6 3-3.4L18.5 5Z" />
               </svg>
-              <p>Teknologi tidak akan pernah berhenti berkembang. Yang bisa saya lakukan adalah terus belajar agar tidak tertinggal.</p>
-              <cite>— Restu Rosenda</cite>
+              <p data-i18n="about_quote">Teknologi tidak akan pernah berhenti berkembang. Yang bisa saya lakukan adalah terus belajar agar tidak tertinggal.</p>
+              <cite data-i18n="about_quote_by">— Restu Rosenda</cite>
             </div>
           </div>
 
           <aside class="about-side">
             <div class="fact-card reveal" data-delay="100">
-              <h3 class="fact-title">Data Singkat</h3>
+              <h3 class="fact-title" data-i18n="about_fact_title">Data Singkat</h3>
               <dl class="fact-list">
                 <div class="fact">
-                  <dt>Nama Lengkap</dt>
+                  <dt data-i18n="about_fact_name">Nama Lengkap</dt>
                   <dd>Restu Rosenda</dd>
                 </div>
                 <div class="fact">
-                  <dt>Usia</dt>
-                  <dd>18 Tahun</dd>
+                  <dt data-i18n="about_fact_age">Usia</dt>
+                  <dd data-i18n="about_fact_age_val">18 Tahun</dd>
                 </div>
                 <div class="fact">
-                  <dt>Sekolah</dt>
+                  <dt data-i18n="about_fact_school">Sekolah</dt>
                   <dd>SMK Alhadiid 1 Cileungsi</dd>
                 </div>
                 <div class="fact">
-                  <dt>Jurusan</dt>
-                  <dd>Teknik Komputer Jaringan</dd>
+                  <dt data-i18n="about_fact_major">Jurusan</dt>
+                  <dd data-i18n="about_fact_major_val">Teknik Komputer Jaringan</dd>
                 </div>
                 <div class="fact">
-                  <dt>Kelas</dt>
-                  <dd>XII (Dua Belas)</dd>
+                  <dt data-i18n="about_fact_class">Kelas</dt>
+                  <dd data-i18n="about_fact_class_val">XII (Dua Belas)</dd>
                 </div>
                 <div class="fact">
-                  <dt>Status</dt>
-                  <dd>Pelajar Aktif</dd>
+                  <dt data-i18n="about_fact_status">Status</dt>
+                  <dd data-i18n="about_fact_status_val">Pelajar Aktif</dd>
                 </div>
               </dl>
             </div>
 
             <div class="why-card reveal" data-delay="160">
-              <h3 class="fact-title">Kenapa Memilih TKJ?</h3>
+              <h3 class="fact-title" data-i18n="about_why_title">Kenapa Memilih TKJ?</h3>
 
               <div class="why-item">
                 <span class="why-num">01</span>
                 <div>
-                  <h4>Melihat Jauh ke Depan</h4>
-                  <p>Teknologi terus berkembang, perusahaan teknologi terus bermunculan, dan lapangan kerja di bidang ini terbuka lebar.</p>
+                  <h4 data-i18n="about_why1_t">Melihat Jauh ke Depan</h4>
+                  <p data-i18n="about_why1_d">Teknologi terus berkembang, perusahaan teknologi terus bermunculan, dan lapangan kerja di bidang ini terbuka lebar.</p>
                 </div>
               </div>
 
               <div class="why-item">
                 <span class="why-num">02</span>
                 <div>
-                  <h4>Melek Teknologi</h4>
-                  <p>Bukan hanya untuk bekerja, tetapi agar saya benar-benar paham teknologi dan tidak sekadar menjadi pengguna.</p>
+                  <h4 data-i18n="about_why2_t">Melek Teknologi</h4>
+                  <p data-i18n="about_why2_d">Bukan hanya untuk bekerja, tetapi agar saya benar-benar paham teknologi dan tidak sekadar menjadi pengguna.</p>
                 </div>
               </div>
 
               <div class="why-item">
                 <span class="why-num">03</span>
                 <div>
-                  <h4>Bekal Menuju Kuliah</h4>
-                  <p>Menjadi fondasi awal sebelum melanjutkan studi di bidang IT, Sistem Informasi, atau jurusan sejalur lainnya.</p>
+                  <h4 data-i18n="about_why3_t">Bekal Menuju Kuliah</h4>
+                  <p data-i18n="about_why3_d">Menjadi fondasi awal sebelum melanjutkan studi di bidang IT, Sistem Informasi, atau jurusan sejalur lainnya.</p>
                 </div>
               </div>
             </div>
@@ -320,9 +339,9 @@
     <section class="section section-alt skills" id="skills">
       <div class="container">
         <div class="section-head reveal">
-          <p class="section-eyebrow"><span>02</span> Keahlian</p>
-          <h2 class="section-title">Kompetensi yang sedang <em>saya bangun</em>.</h2>
-          <p class="section-desc">
+          <p class="section-eyebrow"><span>02</span> <span data-i18n="skills_eyebrow">Keahlian</span></p>
+          <h2 class="section-title" data-i18n-html="skills_title">Kompetensi yang sedang <em>saya bangun</em>.</h2>
+          <p class="section-desc" data-i18n="skills_desc">
             Bekal dari pembelajaran di sekolah, praktik, dan rasa ingin tahu yang tidak berhenti.
             Persentase di bawah adalah gambaran jujur mengenai tahap belajar saya saat ini.
           </p>
@@ -335,10 +354,10 @@
                 <path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"></path>
                 <path d="M3 12l9 4.5L21 12M3 16.5 12 21l9-4.5"></path>
               </svg>
-              <span>Learning by doing</span>
+              <span data-i18n="skills_badge">Learning by doing</span>
             </div>
-            <h3>Dari kelas, laboratorium, praktik jaringan &amp; PKL.</h3>
-            <p>
+            <h3 data-i18n="skills_intro_t">Dari kelas, laboratorium, praktik jaringan &amp; PKL.</h3>
+            <p data-i18n="skills_intro_p">
               Terbiasa belajar dengan praktik langsung: mulai dari perakitan PC, konfigurasi
               modem/router untuk akses internet, pengukuran redaman FTTH, konfigurasi server
               berbasis Linux (Debian/Ubuntu), hingga pekerjaan fiber optic seperti splicing dan
@@ -360,7 +379,7 @@
 
             <div class="skills-note">
               <span class="pulse-dot" aria-hidden="true"></span>
-              Sedang memperdalam: Linux Server, routing, dan troubleshooting jaringan.
+              <span data-i18n="skills_note">Sedang memperdalam: Linux Server, routing, dan troubleshooting jaringan.</span>
             </div>
           </div>
 
@@ -417,13 +436,74 @@
       </div>
     </section>
 
+    <!-- ===== Prestasi & Sertifikasi ===== -->
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow"><span>06</span> <span data-i18n="ach_eyebrow">Prestasi &amp; Sertifikasi</span></p>
+          <h2 class="section-title" data-i18n-html="ach_title">Bukti pembelajaran <em>yang telah diraih</em>.</h2>
+          <p class="section-desc" data-i18n="ach_desc">
+            Kumpulan sertifikat yang saya peroleh dari pelatihan dan pembelajaran untuk
+            memperkuat kompetensi di bidang teknologi dan jaringan.
+          </p>
+        </div>
+
+        <div class="achievements-grid reveal" data-delay="80">
+          <article class="achievement-card" role="button" tabindex="0" data-lightbox="assets/img/sertifikat-1.jpg" data-caption="Huawei ICT Academy - HClA-5G V2.0 Course | 29 Agustus 2026">
+            <figure class="achievement-media">
+              <img src="assets/img/sertifikat-1.jpg" alt="Sertifikat Huawei ICT Academy HClA-5G V2.0 Course atas nama Restu Rosenda" loading="lazy" />
+            </figure>
+            <div class="achievement-body">
+              <span class="achievement-badge" data-i18n="ach_badge">Sertifikasi</span>
+              <h3>HClA-5G V2.0 Course</h3>
+              <p>Huawei ICT Academy</p>
+              <div class="achievement-meta">
+                <span data-i18n="ach_1_date">Terbit: 29 Agustus 2026</span>
+                <span data-i18n="ach_click">Klik untuk memperbesar</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card" role="button" tabindex="0" data-lightbox="assets/img/sertifikat-2.jpg" data-caption="Huawei ICT Academy - I-ICIA-AI V4.0 Course | 14 Agustus 2026 | Kode: 20260814009878">
+            <figure class="achievement-media">
+              <img src="assets/img/sertifikat-2.jpg" alt="Sertifikat Huawei ICT Academy I-ICIA-AI V4.0 Course atas nama Restu Rosenda" loading="lazy" />
+            </figure>
+            <div class="achievement-body">
+              <span class="achievement-badge" data-i18n="ach_badge">Sertifikasi</span>
+              <h3>I-ICIA-AI V4.0 Course</h3>
+              <p>Huawei ICT Academy</p>
+              <div class="achievement-meta">
+                <span data-i18n="ach_2_date">Terbit: 14 Agustus 2026</span>
+                <span data-i18n="ach_2_code">Kode: 20260814009878</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card" role="button" tabindex="0" data-lightbox="assets/img/sertifikat-gemini.jpg" data-caption="Google for Education - Gemini Certified Student K12 | 09 Mei 2026 - 09 Mei 2027">
+            <figure class="achievement-media">
+              <img src="assets/img/sertifikat-gemini.jpg" alt="Sertifikat Google for Education Gemini Certified Student K12 atas nama Restu Rosenda" loading="lazy" />
+            </figure>
+            <div class="achievement-body">
+              <span class="achievement-badge" data-i18n="ach_badge">Sertifikasi</span>
+              <h3>Gemini Certified Student - K12</h3>
+              <p>Google for Education</p>
+              <div class="achievement-meta">
+                <span data-i18n="ach_3_date">09 Mei 2026 – 09 Mei 2027</span>
+                <span data-i18n="ach_click">Klik untuk memperbesar</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Perjalanan ===== -->
     <section class="section journey" id="journey">
       <div class="container">
         <div class="section-head reveal">
-          <p class="section-eyebrow"><span>03</span> Perjalanan</p>
-          <h2 class="section-title">Belajar di sekolah, praktik, dan <em>pengalaman PKL</em>.</h2>
-          <p class="section-desc">
+          <p class="section-eyebrow"><span>03</span> <span data-i18n="journey_eyebrow">Perjalanan</span></p>
+          <h2 class="section-title" data-i18n-html="journey_title">Belajar di sekolah, praktik, dan <em>pengalaman PKL</em>.</h2>
+          <p class="section-desc" data-i18n="journey_desc">
             Dokumentasi beberapa kegiatan yang saya lakukan: perakitan PC, setting konfigurasi modem/wifi
             untuk mendapatkan akses internet dari ISP (Pandawa Global Telematika), pengecekan redaman
             pada jaringan FTTH, konfigurasi server Linux (Debian/Ubuntu), serta pekerjaan fiber optic
@@ -529,8 +609,8 @@
     <section class="section section-alt goals" id="goals">
       <div class="container">
         <div class="section-head reveal">
-          <p class="section-eyebrow"><span>04</span> Tujuan</p>
-          <h2 class="section-title">Ke mana saya ingin <em>melangkah</em>.</h2>
+          <p class="section-eyebrow"><span>04</span> <span data-i18n="goals_eyebrow">Tujuan</span></p>
+          <h2 class="section-title" data-i18n-html="goals_title">Ke mana saya ingin <em>melangkah</em>.</h2>
         </div>
 
         <div class="goals-grid">
@@ -589,9 +669,9 @@
       <div class="container">
         <div class="contact-panel reveal">
           <div class="contact-info">
-            <p class="section-eyebrow"><span>05</span> Kontak</p>
-            <h2 class="section-title">Punya pertanyaan atau ingin <em>berdiskusi</em>?</h2>
-            <p class="contact-desc">
+            <p class="section-eyebrow"><span>05</span> <span data-i18n="contact_eyebrow">Kontak</span></p>
+            <h2 class="section-title" data-i18n-html="contact_title">Punya pertanyaan atau ingin <em>berdiskusi</em>?</h2>
+            <p class="contact-desc" data-i18n="contact_desc">
               Saya terbuka untuk berdiskusi soal teknologi, jaringan, peluang belajar, atau
               sekadar bertukar pikiran. Silakan kirim pesan — saya akan berusaha membalas
               secepatnya.
@@ -605,7 +685,7 @@
                   </svg>
                 </span>
                 <div>
-                  <span class="contact-label">WhatsApp</span>
+                  <span class="contact-label" data-i18n="contact_wa">WhatsApp</span>
                   <a href="https://wa.me/6285717149827" class="contact-value" target="_blank" rel="noopener">0857-1714-9827</a>
                 </div>
               </li>
@@ -617,7 +697,7 @@
                   </svg>
                 </span>
                 <div>
-                  <span class="contact-label">Email</span>
+                  <span class="contact-label" data-i18n="contact_email">Email</span>
                   <a href="mailto:ceotutu28@gmail.com" class="contact-value">ceotutu28@gmail.com</a>
                 </div>
               </li>
@@ -630,7 +710,7 @@
                   </svg>
                 </span>
                 <div>
-                  <span class="contact-label">Instagram</span>
+                  <span class="contact-label" data-i18n="contact_ig">Instagram</span>
                   <a href="https://instagram.com/restuursndaa" class="contact-value" target="_blank" rel="noopener">@restuursndaa</a>
                 </div>
               </li>
@@ -642,8 +722,8 @@
                   </svg>
                 </span>
                 <div>
-                  <span class="contact-label">Lokasi Sekolah</span>
-                  <span class="contact-value">SMK Alhadiid 1 Cileungsi — Bogor, Jawa Barat</span>
+                  <span class="contact-label" data-i18n="contact_loc">Lokasi Sekolah</span>
+                  <span class="contact-value" data-i18n="contact_loc_val">SMK Alhadiid 1 Cileungsi — Bogor, Jawa Barat</span>
                 </div>
               </li>
               <li>
@@ -654,8 +734,8 @@
                   </svg>
                 </span>
                 <div>
-                  <span class="contact-label">Pendidikan</span>
-                  <span class="contact-value">SMK Alhadiid 1 Cileungsi — TKJ</span>
+                  <span class="contact-label" data-i18n="contact_edu">Pendidikan</span>
+                  <span class="contact-value" data-i18n="contact_edu_val">SMK Alhadiid 1 Cileungsi — TKJ</span>
                 </div>
               </li>
             </ul>
@@ -666,26 +746,26 @@
             <form class="contact-form" id="contactForm" data-email="ceotutu28@gmail.com" novalidate>
               <div class="field-row">
                 <div class="field">
-                  <label for="name">Nama</label>
-                  <input type="text" id="name" name="name" placeholder="Nama kamu" required autocomplete="name" />
+                  <label for="name" data-i18n="contact_form_name">Nama</label>
+                  <input type="text" id="name" name="name" placeholder="Nama kamu" data-i18n="contact_form_placeholder_name" required autocomplete="name" />
                 </div>
                 <div class="field">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="nama@email.com" required autocomplete="email" />
+                  <label for="email" data-i18n="contact_form_email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="nama@email.com" data-i18n="contact_form_placeholder_email" required autocomplete="email" />
                 </div>
               </div>
 
               <div class="field">
-                <label for="subject">Subjek</label>
-                <input type="text" id="subject" name="subject" placeholder="Tentang apa pesan ini?" required />
+                <label for="subject" data-i18n="contact_form_subject">Subjek</label>
+                <input type="text" id="subject" name="subject" placeholder="Tentang apa pesan ini?" data-i18n="contact_form_placeholder_subject" required />
               </div>
 
               <div class="field">
-                <label for="message">Pesan</label>
-                <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+                <label for="message" data-i18n="contact_form_message">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini..." data-i18n="contact_form_placeholder_message" required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-block">
+              <button type="submit" class="btn btn-primary btn-block" data-i18n="contact_form_btn">
                 Kirim Pesan
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="m22 2-7 20-4-9-9-4 20-7Z"></path>
@@ -693,7 +773,7 @@
                 </svg>
               </button>
 
-              <p class="form-hint">Pesan akan dikirim melalui aplikasi email yang terpasang di perangkatmu.</p>
+              <p class="form-hint" data-i18n="contact_form_hint">Pesan akan dikirim melalui aplikasi email yang terpasang di perangkatmu.</p>
             </form>
           </div>
         </div>
@@ -740,16 +820,41 @@
         <a href="#about">Tentang</a>
         <a href="#skills">Keahlian</a>
         <a href="#journey">Perjalanan</a>
+        <a href="#achievements">Prestasi</a>
         <a href="#goals">Tujuan</a>
         <a href="#contact">Kontak</a>
       </nav>
     </div>
 
     <div class="container footer-bottom">
-      <p>© <span id="year">2026</span> Restu Rosenda. Seluruh hak cipta dilindungi.</p>
-      <p class="footer-made">Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+      <p>© <span id="year">2026</span> Restu Rosenda. <span data-i18n="footer_copy">Seluruh hak cipta dilindungi.</span></p>
+      <p class="footer-made" data-i18n="footer_made">Dibuat dengan HTML, CSS &amp; JavaScript.</p>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Tutup">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Sebelumnya">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Selanjutnya">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+    <div class="lightbox-inner">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="Preview sertifikat" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
 
   <!-- Tombol kembali ke atas -->
   <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas">
@@ -764,6 +869,7 @@
     <span id="toastMessage"></span>
   </div>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.2/dist/html2pdf.bundle.min.js"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>
